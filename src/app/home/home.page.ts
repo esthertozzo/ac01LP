@@ -16,6 +16,7 @@ export class HomePage {
   FahrenheitValor = "";
   CelsiusValor = "";
 
+  // ex 1
   // metodo
   celsiusParaFahrenheit(){
     this.FahrenheitValor = ((parseFloat(this.grausCelsius)*9 + 160)/5).toString();
