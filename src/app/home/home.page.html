@@ -13,8 +13,39 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
+  <!-- ex 1 -->
+    <ion-toolbar>
+      <ion-title size="large">Converter unidades de Temperatura</ion-title>
+    </ion-toolbar>
+
+  <ion-item>
+    <ion-input type="number" label="Digite uma temperatura em Celsius" labelPlacement="floating" [(ngModel)]="grausCelsius"></ion-input>
+  </ion-item>
+
+  <br><ion-button fill="outline" size="default" color="tertiary" (click)="celsiusParaFahrenheit()">converter para Fahrenheit</ion-button>
+
+  <br><ion-label>{{FahrenheitValor}}</ion-label>
+
+  <br><ion-item>
+    <ion-input type="number" label="Digite uma temperatura em Fahrenheit" labelPlacement="floating" [(ngModel)]="grausFahrenheit"></ion-input>
+  </ion-item>
+
+  <br><ion-button fill="outline" size="default" color="tertiary" (click)="fahrenheitParaCelsius()">converter para celsius</ion-button>
+
+  <br><ion-label>{{CelsiusValor}}</ion-label>
+
+  <!-- <ion-item>
+    <ion-input type="number" label="digite uma temperatura em Fahrenheit" labelPlacement="floating" [(ngModel)]="dolar"></ion-input>
+  </ion-item>
+  <br><ion-label>{{CelsiusValor}}</ion-label> -->
+
+
+
+  <!-- mostrar resultado. só da pra pegar um atributo -->
+
+
+  <!-- <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </div> -->
 </ion-content>
