@@ -33,6 +33,57 @@
   <br><ion-button fill="outline" size="default" color="tertiary" (click)="fahrenheitParaCelsius()">converter para celsius</ion-button>
 
   <br><ion-label>{{CelsiusValor}}</ion-label>
+  <br>
+  <br>
+  <br>
+
+   <!-- ex 2 -->
+   <ion-toolbar>
+    <ion-title size="large">Verificar Triângulo</ion-title>
+  </ion-toolbar>
+
+  <ion-item>
+    <ion-input type="number" label="Digite o primeiro lado" labelPlacement="floating" [(ngModel)]="lado1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="number" label="Digite o segundo lado" labelPlacement="floating" [(ngModel)]="lado2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="number" label="Digite o terceiro lado" labelPlacement="floating" [(ngModel)]="lado3"></ion-input>
+  </ion-item>
+
+  <br><ion-button fill="outline" size="default" color="tertiary" (click)="verificarTriangulo()">verificar Triângulo</ion-button>
+
+  <br><ion-label>{{triangulo}}</ion-label>
+  <br>
+  <br>
+  <br>
+
+  <!-- ex 3 -->
+  <ion-toolbar>
+    <ion-title size="large">Calcular média</ion-title>
+  </ion-toolbar>
+
+  <ion-item>
+    <ion-input type="number" label="Digite a nota 1" labelPlacement="floating" [(ngModel)]="nota1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="number" label="Digite a nota 2" labelPlacement="floating" [(ngModel)]="nota2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input type="number" label="Digite a nota 3" labelPlacement="floating" [(ngModel)]="nota3"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="number" label="Digite a nota 4" labelPlacement="floating" [(ngModel)]="nota4"></ion-input>
+  </ion-item>
+
+  <br><ion-button fill="outline" size="default" color="tertiary" (click)="media()">verificar média</ion-button>
+
+  <br><ion-label>{{definicaoMedia}}</ion-label>
+  <br>
+  <br>
+  <br>
 
   <!-- <ion-item>
     <ion-input type="number" label="digite uma temperatura em Fahrenheit" labelPlacement="floating" [(ngModel)]="dolar"></ion-input>
